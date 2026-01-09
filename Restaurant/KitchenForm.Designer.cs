@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "KitchenForm";
+            textBox1 = new TextBox();
+            SuspendLayout();
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(-1, -2);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(801, 452);
+            textBox1.TabIndex = 0;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // KitchenForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
+            Name = "KitchenForm";
+            Text = "KitchenForm";
+            FormClosed += KitchenForm_FormClosed;
+            Load += KitchenForm_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox textBox1;
     }
 }

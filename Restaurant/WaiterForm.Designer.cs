@@ -41,6 +41,7 @@
             Send.TabIndex = 0;
             Send.Text = "Send";
             Send.UseVisualStyleBackColor = true;
+            Send.Click += Send_Click;
             // 
             // textBox1
             // 
