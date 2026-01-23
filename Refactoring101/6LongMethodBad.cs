@@ -11,13 +11,23 @@ public class LongMethod
     // A very long method
     public void PrintReport()
     {
-        // Print Header
-        // ...........
+        PrintHeader();
+        PrintBody();
+        PrintFooter();
+    }
 
-        // Print Body
-        // ...........
-
-        // Print Footer
+    private void PrintHeader()
+    {
         // ...........
     }
+    private void PrintBody()
+    {
+        // ...........
+    }
+    private void PrintFooter()
+    {
+        // ...........
+    }
+
+
 }
